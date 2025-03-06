@@ -1,3 +1,4 @@
+/* Reset default browser styling */
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +6,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Body Styling */
 body {
     background-color: #f4f4f4;
     color: #333;
 }
 
+/* Header Styling */
 header {
     background-color: #2d4857;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    position: relative; 
+    justify-content: center;
+    position: relative;
     padding: 10px 20px;
     height: 200px;
     width: 100%;
@@ -35,6 +38,7 @@ header h1 {
     font-size: 3.8rem;
 }
 
+/* Navigation */
 nav {
     background-color: black;
     padding: 10px 0;
@@ -62,28 +66,74 @@ nav {
     color: yellow;
 }
 
-/* Main Layout */
+.hamburger {
+    display: none; 
+}
+
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 2fr 1fr; /* "Course Work" takes 2/3, "Utah" takes 1/3 */
+    grid-template-rows: auto auto; /* Auto-sizing rows */
+    grid-template-areas:
+        "home home"
+        "course utah"
+        "certificate certificate";
     gap: 20px;
     width: 100%;
     padding: 20px;
+    align-items: start;
 }
 
-.card:first-child {
-    grid-column: 1 / 2;
+/* Home Heading Styling */
+main h1 {
+    grid-area: home;
+    text-align: center; /* Center aligns */
+    font-size: 2.8rem;
+    color: #2d4857;
+    margin-bottom: 10px;
 }
 
-.card:nth-child(2) {
-    grid-column: 2 / 3;
+/* Course Work Section */
+.coursework {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%; /* Ensures equal height */
+    padding-bottom: 20px; /* Adds space inside instead of moving dots */
 }
 
+.coursework ul {
+    list-style: disc;
+    list-style-position: inside; /* Keeps bullets inside */
+    padding-left: 20px; /* Keeps indentation */
+    margin: 0; /* Removes extra space */
+    flex-grow: 1; /* Ensures the list expands properly inside */
+}
+
+
+/* Utah Section */
+.utah {
+    grid-area: utah;
+}
+
+/* Certificate Section */
+.certificate {
+    grid-area: certificate;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Card Styling */
 .card {
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+
+
 }
 
 .card h2 {
@@ -93,14 +143,14 @@ main {
     border-radius: 5px 5px 0 0;
 }
 
-ul {
-    list-style-position: inside;
-    padding: 20px;
-}
-
-figure {
+/* Footer */
+footer {
+    background: #2d4857;
+    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .certificate {
@@ -148,25 +198,12 @@ figure {
     cursor: pointer;
 }
 
-footer {
+.certificate h2 {
     background: #2d4857;
     color: white;
-    text-align: center;
     padding: 10px;
-    margin-top: 20px;
-    width: 100%;
+    border-radius: 5px 5px 0 0;
 }
-
-footer img {
-    width: 20px;
-    height: auto;
-    margin-left: 10px;
-}
-
-.hamburger {
-    display: none; 
-}
-
 
 #lastModified {
     font-size: 0.8rem;
