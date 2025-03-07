@@ -114,4 +114,14 @@ nav {
     .utah img {
         width: 300px;
     }
+
+    .completed {
+        background-color: lightgreen; 
+        color: black;
+        font-weight: bold;
+        border: 2px solid green;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    
 }

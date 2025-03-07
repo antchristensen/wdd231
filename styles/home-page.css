@@ -212,3 +212,12 @@ footer {
     font-size: 0.8rem;
     color: yellow;
 }
+
+.completed {
+    background-color: lightgreen; 
+    color: black;
+    font-weight: bold;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
