@@ -104,4 +104,14 @@ nav {
         width: 90%;
         margin-bottom: 20px;
     }
+
+    .utah {
+        grid-area: utah;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .utah img {
+        width: 300px;
+    }
 }

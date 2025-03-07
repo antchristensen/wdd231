@@ -112,8 +112,13 @@ main h1 {
 
 .utah {
     grid-area: utah;
+    text-align: center;
+    font-size: 2rem;
 }
 
+.utah img {
+    width: 450px;
+}
 
 .certificate {
     grid-area: certificate;
