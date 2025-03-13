@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Moab Adventure Tours",
+        "address": "123 Main St, Moab, UT",
+        "phone": "(435) 555-1234",
+        "website": "https://moabadventuretours.com",
+        "image": "moabadventure.png",
+        "membership": 3
+    },
+    {
+        "name": "Red Rock Café",
+        "address": "456 Canyon Rd, Moab, UT",
+        "phone": "(435) 555-5678",
+        "website": "https://redrockcafe.com",
+        "image": "redrockcafe.png",
+        "membership": 2
+    },
+    {
+        "name": "Moab Outfitters",
+        "address": "789 Desert Ave, Moab, UT",
+        "phone": "(435) 555-9012",
+        "website": "https://moaboutfitters.com",
+        "image": "moaboutfitters.png",
+        "membership": 3
+    },
+    {
+        "name": "Canyon River Lodge",
+        "address": "159 River Rd, Moab, UT",
+        "phone": "(435) 555-3456",
+        "website": "https://canyonriverlodge.com",
+        "image": "canyonriver.png",
+        "membership": 1
+    }
+]
