@@ -1,34 +1,65 @@
 [
     {
-        "name": "Moab Adventure Tours",
-        "address": "123 Main St, Moab, UT",
-        "phone": "(435) 555-1234",
-        "website": "https://moabadventuretours.com",
-        "image": "moabadventure.png",
-        "membership": 3
+        "name": "Moab Adventures",
+        "address": "225 S Main St Moab Utah",
+        "phone": "(123) 555-7890",
+        "website": "https://www.moabadventurecenter.com/",
+        "image": "logo-mac.png",
+        "membership": 3,
+        "description": "Adventure tours and outdoor experiences in Moab."
     },
     {
-        "name": "Red Rock Café",
-        "address": "456 Canyon Rd, Moab, UT",
-        "phone": "(435) 555-5678",
-        "website": "https://redrockcafe.com",
-        "image": "redrockcafe.png",
-        "membership": 2
+        "name": "Moab Diner",
+        "address": "189 South Main Street Moab, UT",
+        "phone": "(435) 259-4006",
+        "website": "https://www.moabdiner.com/",
+        "image": "MoabDiner.avif",
+        "membership": 2,
+        "description": "Local cafe serving fresh meals and coffee."
     },
     {
-        "name": "Moab Outfitters",
-        "address": "789 Desert Ave, Moab, UT",
-        "phone": "(435) 555-9012",
-        "website": "https://moaboutfitters.com",
-        "image": "moaboutfitters.png",
-        "membership": 3
+        "name": "Desert Wild Moab",
+        "address": "123 Canyon Dr, Moab, UT",
+        "phone": "(435) 355-0115",
+        "website": "https://desertwildmoab.com/",
+        "image": "DesertWildLogo.avif",
+        "membership": 1,
+        "description": "Outdoor gear and apparel for desert adventurers."
     },
     {
-        "name": "Canyon River Lodge",
-        "address": "159 River Rd, Moab, UT",
-        "phone": "(435) 555-3456",
-        "website": "https://canyonriverlodge.com",
-        "image": "canyonriver.png",
-        "membership": 1
+        "name": "Moab Reality",
+        "address": "123 River Ln, Moab, UT",
+        "phone": "(555) 123-7890",
+        "website": "https://canyonrealestate.com",
+        "image": "RealityLogo.webp",
+        "membership": 3,
+        "description": "Helping you find your dream home in Moab."
+    },
+    {
+        "name": "ARches Repair Center",
+        "address": "1160 South Highway 191 Moab, UT",
+        "phone": "(435) 259-4959",
+        "website": "https://www.archesrepaircenter.net/",
+        "image": "RepairShop.webp",
+        "membership": 2,
+        "description": "Quality car repairs with great customer service."
+    },
+    {
+        "name": "Apex Landscaping Service",
+        "address": "PO Box 1346 Moab, UT",
+        "phone": "(614) 205-6484",
+        "website": "https://www.apexlandscapeservice.com/",
+        "image": "Lanscaping.avif",
+        "membership": 1,
+        "description": "Custom landscaping services for homes and businesses."
+    },
+    {
+        "name": "Moab Made",
+        "address": "82 North Main Street,Moab UT",
+        "phone": "(435) 210-0650",
+        "website": "https://www.moabmade.com",
+        "image": "MoabMade.avif",
+        "membership": 3,
+        "description": "Innovative tech solutions for the modern world."
     }
 ]
