@@ -1,4 +1,3 @@
-/* ========== General Styles ========== */
 :root {
     --primary-color: #004080;
     --secondary-color: #ffcc00;
@@ -15,7 +14,7 @@ body {
     padding: 0;
 }
 
-/* ========== Header & Navigation ========== */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -52,7 +51,7 @@ nav ul li a.active {
     text-decoration: underline;
 }
 
-/* ========== Directory Grid/List Styles ========== */
+
 #directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -60,20 +59,19 @@ nav ul li a.active {
     padding: 20px;
 }
 
-/* ✅ FIX: Ensure Grid View Displays Correctly */
+
 .grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* ✅ FIX: Ensure List View is Applied Correctly */
+
 .list-view {
     display: block !important;
     padding: 0;
 }
 
-/* ✅ List View Styling */
 .list-view .member {
     display: block;
     text-align: left;
@@ -86,7 +84,7 @@ nav ul li a.active {
     display: none;
 }
 
-/* ========== Member Cards ========== */
+
 .member {
     background: var(--white);
     border: 1px solid #ddd;
@@ -111,33 +109,33 @@ footer {
     width: 100%;
 }
 
-/* Ensure images maintain correct aspect ratio */
+
 .member img {
-    width: 100%;   /* Makes sure images don’t stretch beyond their container */
-    height: auto;  /* Keeps the correct aspect ratio */
-    object-fit: cover; /* Crops image instead of distorting */
-    aspect-ratio: 16/9; /* Forces a standard aspect ratio */
-    max-width: 200px; /* Prevents overly large images */
+    width: 100%;   
+    height: auto;  
+    object-fit: cover; 
+    aspect-ratio: 16/9; 
+    max-width: 200px; 
 }
 
 .menu-toggle {
-    display: none; /* Hidden on larger screens */
+    display: none; 
     font-size: 30px;
     cursor: pointer;
     color: white;
 }
 
-/* ========== Responsive Navigation ========== */
+
 @media screen and (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Show hamburger menu */
+        display: block;
         position: absolute;
         top: 15px;
         right: 20px;
     }
 
     nav {
-        display: none; /* Hide nav by default */
+        display: none; 
         position: absolute;
         top: 60px;
         right: 20px;
@@ -158,7 +156,7 @@ footer {
         margin: 10px 0;
     }
 
-    /* Show navigation when active */
+  
     nav.active {
         display: block;
     }
