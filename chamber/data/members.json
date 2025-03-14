@@ -15,7 +15,7 @@
         "website": "https://www.moabdiner.com/",
         "image": "MoabDiner.avif",
         "membership": 2,
-        "description": "Local cafe serving fresh meals and coffee."
+        "description": "Local dinver serving fresh food."
     },
     {
         "name": "Desert Wild Moab",
@@ -60,6 +60,6 @@
         "website": "https://www.moabmade.com",
         "image": "MoabMade.avif",
         "membership": 3,
-        "description": "Innovative tech solutions for the modern world."
+        "description": "Moab art and style by hometown artist."
     }
 ]
