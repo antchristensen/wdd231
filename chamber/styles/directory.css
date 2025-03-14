@@ -105,3 +105,12 @@ footer {
     margin-top: 20px;
     width: 100%;
 }
+
+/* Ensure images maintain correct aspect ratio */
+.member img {
+    width: 100%;   /* Makes sure images don’t stretch beyond their container */
+    height: auto;  /* Keeps the correct aspect ratio */
+    object-fit: cover; /* Crops image instead of distorting */
+    aspect-ratio: 16/9; /* Forces a standard aspect ratio */
+    max-width: 200px; /* Prevents overly large images */
+}
