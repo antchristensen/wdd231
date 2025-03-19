@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         try {
             const response = await fetch("data/members.json");
             businesses = await response.json();
-            renderDirectory("grid");  // ✅ Default to Grid View
+            renderDirectory("grid"); 
         } catch (error) {
             console.error("Error fetching members:", error);
         }

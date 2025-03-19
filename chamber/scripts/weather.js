@@ -7,19 +7,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&units=imperial&appid=${apiKey}`;
 
     try {
-        // Fetch current weather
+      
         const weatherResponse = await fetch(weatherURL);
         const weatherData = await weatherResponse.json();
 
-        // Fetch 3-day forecast
+       
         const forecastResponse = await fetch(forecastURL);
         const forecastData = await forecastResponse.json();
 
-        // Update current weather
+       
         document.getElementById("current-temp").textContent = `${Math.round(weatherData.main.temp)}°F`;
         document.getElementById("current-desc").textContent = weatherData.weather[0].description;
 
-        // Extract and display 3-day forecast (every 24 hours from now)
+        
         const forecastList = document.getElementById("forecast");
         forecastList.innerHTML = "";
 

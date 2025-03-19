@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const spotlightContainer = document.querySelector(".spotlights");
 
     try {
-        // Fetch chamber members JSON
+
         const response = await fetch("data/members.json");
         const members = await response.json();
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             1: "Bronze"
         };
 
-        // Filter only Gold (3) & Silver (2) members
+
         const eligibleMembers = members.filter(member =>
             member.membership === 3 || member.membership === 2
         );
@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             return;
         }
 
-        // Shuffle and select 2 or 3 members randomly
+
         const shuffledMembers = eligibleMembers.sort(() => 0.5 - Math.random());
         const selectedMembers = shuffledMembers.slice(0, 3);
 
-        // Generate spotlight cards
+        
         spotlightContainer.innerHTML = selectedMembers.map(member => `
             <div class="spotlight">
                 <img src="images/${member.image}" alt="${member.name} Logo">
