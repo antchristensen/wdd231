@@ -133,7 +133,7 @@ main {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff5733; /* Adjust button color */
+    background-color: #004080; /* Adjust button color */
     color: white;
     text-decoration: none;
     font-size: 1rem;
@@ -142,7 +142,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #cc462a;
+    background-color: black;
 }
 
 .weather {
