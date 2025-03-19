@@ -135,7 +135,7 @@ footer {
     }
 
     nav {
-        display: none; 
+        display: none; /* Keep it hidden initially */
         position: absolute;
         top: 60px;
         right: 20px;
@@ -158,6 +158,6 @@ footer {
 
   
     nav.active {
-        display: block;
+        display: block !important; /* Overrides display: none */
     }
 }

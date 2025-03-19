@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | Moab Chamber of Commerce</title>
+    <meta name="description" content="Moab Chamber of Commerce Home Page">
+    <meta name="author" content="Anthony Christesen">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Moab Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.istockphoto.com/id/467703976/photo/arches-national-park.jpg?s=1024x1024&w=is&k=20&c=2aO8SOU7FZML1hxRUEhes5QbG_VabDFOM5g7dVcdGxA=">
+    <meta property="og:url" content="https://antchristensen.github.io/wdd231/chamber/index.html">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script defer src="scripts/hamburger-menu.js"></script>
+    <script defer src="scripts/toggle-data.js"></script>
+
+    <body>
+        <header>
+            
+            <div class="logo">
+                <img src="images/Utaharch.webp" alt="Moab Chamber of Commerce Logo">
+            </div>
+            
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+            
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+    
+        <main>
+            <section class="hero">
+                <img src="images/hero-image.webp" alt="Hero Image Description">
+                <div class="hero-text">
+                    <h1>Welcome to Moab Chamber of Commerce</h1>
+                    <p>Supporting businesses and community growth</p>
+                    <a href="about.html" class="btn">Join Moab Chamber of Commerce</a>
+                </div>
+            </section>
+
+            <section class="current-events">
+                <h2>Current Events</h2>
+                <div class="event">
+                    <h3>Annual Business Expo</h3>
+                    <p>Join us for networking and business opportunities on April 20th.</p>
+                </div>
+                <div class="event">
+                    <h3>Community Cleanup Day</h3>
+                    <p>Help keep Moab beautiful! Volunteer on April 27th.</p>
+                </div>
+                <a href="events.html" class="btn">View All Events</a>
+            </section>
+            
+            <section class="weather">
+                <h2>Moab Weather</h2>
+                <div class="weather-info">
+                    <p><strong>Currently:</strong> <span id="current-temp">Loading...</span></p>
+                    <p><strong>Description:</strong> <span id="current-desc">Loading...</span></p>
+                    <h3>3-Day Forecast</h3>
+                    <ul id="forecast"></ul>
+                </div>
+            </section>
+            
+            <script src="scripts/weather.js"></script>
+            
+            <section class="company-spotlights">
+                <h2>Featured Businesses</h2>
+                <div class="spotlights">
+                    <!-- Spotlight members will be inserted here by JavaScript -->
+                </div>
+            </section>
+            <script src="scripts/spotlight.js"></script>
+            
+            
+
+        </main>
+    
+        <footer>
+            <p>&copy; <span id="year"></span> Moab Chamber of Commerce</p>
+            <p>Anthony Christesen | Utah</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>
+    
+    </body>
+    </html>
