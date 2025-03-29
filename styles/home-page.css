@@ -221,3 +221,64 @@ footer {
     border-radius: 5px;
     padding: 5px 10px;
 }
+
+#courseDialog {
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+#courseDialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#courseDialog h3 {
+    font-size: 1.5rem;
+    color: #2d4857;
+    margin-bottom: 1rem;
+}
+
+#courseDialog p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#courseDialog button#closeDialog {
+    background-color: #2d4857;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#courseDialog button#closeDialog:hover {
+    background-color: #1a2f3a;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card,
+.certificate {
+    animation: fadeInUp 1s ease-out;
+}

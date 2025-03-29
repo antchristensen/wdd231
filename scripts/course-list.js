@@ -1,11 +1,59 @@
 document.addEventListener("DOMContentLoaded", function () {
     const courses = [
-        { code: "CSE 110", category: "CSE", credits: 3 },
-        { code: "WDD 130", category: "WDD", credits: 3 },
-        { code: "CSE 111", category: "CSE", credits: 3 },
-        { code: "CSE 210", category: "CSE", credits: 4 },
-        { code: "WDD 131", category: "WDD", credits: 3 },
-        { code: "WDD 231", category: "WDD", credits: 3 }
+        {
+            code: "CSE 110",
+            title: "Introduction to Programming",
+            category: "CSE",
+            credits: 3,
+            description: "Learn programming fundamentals using problem-solving techniques.",
+            certificate: "Web and Computer Programming",
+            techStack: "Python"
+        },
+        {
+            code: "WDD 130",
+            title: "Web Fundamentals",
+            category: "WDD",
+            credits: 3,
+            description: "Covers basic HTML and CSS to build static web pages.",
+            certificate: "Web and Computer Programming",
+            techStack: "HTML, CSS"
+        },
+        {
+            code: "CSE 111",
+            title: "Programming with Functions",
+            category: "CSE",
+            credits: 3,
+            description: "Build on Python skills to write modular and reusable code.",
+            certificate: "Web and Computer Programming",
+            techStack: "Python"
+        },
+        {
+            code: "CSE 210",
+            title: "Object-Oriented Programming",
+            category: "CSE",
+            credits: 4,
+            description: "Design and build object-oriented applications.",
+            certificate: "Web and Computer Programming",
+            techStack: "Python, OOP"
+        },
+        {
+            code: "WDD 131",
+            title: "Dynamic Web Fundamentals",
+            category: "WDD",
+            credits: 3,
+            description: "Learn basic JavaScript and DOM manipulation.",
+            certificate: "Web and Computer Programming",
+            techStack: "HTML, CSS, JavaScript"
+        },
+        {
+            code: "WDD 231",
+            title: "Front-end Development I",
+            category: "WDD",
+            credits: 3,
+            description: "Build responsive websites using advanced CSS and JS.",
+            certificate: "Web and Computer Programming",
+            techStack: "HTML, CSS, JavaScript"
+        }
     ];
 
     const courseListContainer = document.querySelector(".course-list");
@@ -17,27 +65,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedCourses = [];
 
     function displayCourses(filter) {
-        courseListContainer.innerHTML = ""; // Clear course list
+        courseListContainer.innerHTML = "";
 
         courses.forEach(course => {
             if (filter === "All" || course.category === filter) {
                 const button = document.createElement("button");
                 button.textContent = course.code;
-                button.dataset.credits = course.credits; // Store credits in dataset
+                button.dataset.credits = course.credits;
 
-                // Toggle selection on click
                 button.addEventListener("click", function () {
-                    const courseIndex = selectedCourses.findIndex(c => c.code === course.code);
-                    
-                    if (courseIndex === -1) {
-                        selectedCourses.push(course); // Add course if not already selected
-                        this.classList.add("selected");
-                    } else {
-                        selectedCourses.splice(courseIndex, 1); // Remove course if already selected
-                        this.classList.remove("selected");
-                    }
-
-                    updateTotalCredits();
+                    showCourseModal(course);
                 });
 
                 courseListContainer.appendChild(button);
@@ -46,17 +83,41 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateTotalCredits() {
-        // Use reduce() to sum the credits of selected courses
         const totalCredits = selectedCourses.reduce((sum, course) => sum + course.credits, 0);
         totalCreditsDisplay.textContent = `Total Credits: ${totalCredits}`;
     }
 
-    // Add event listeners to filter buttons
+    function showCourseModal(course) {
+        const dialog = document.getElementById("courseDialog");
+
+        dialog.innerHTML = `
+            <h3>${course.code} - ${course.title}</h3>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Description:</strong> ${course.description}</p>
+            <p><strong>Certificate:</strong> ${course.certificate}</p>
+            <p><strong>Technology Stack:</strong> ${course.techStack}</p>
+            <button id="closeDialog">Close</button>
+        `;
+
+        dialog.showModal();
+
+        dialog.querySelector("#closeDialog").addEventListener("click", () => {
+            dialog.close();
+        });
+
+        dialog.addEventListener("click", function outsideClick(event) {
+            if (event.target === dialog) {
+                dialog.close();
+                dialog.removeEventListener("click", outsideClick);
+            }
+        });
+    }
+
     filterButtons.forEach(button => {
         button.addEventListener("click", function () {
-            displayCourses(this.textContent); // Filter courses
+            displayCourses(this.textContent);
         });
     });
 
-    displayCourses("All"); // Show all courses by default
+    displayCourses("All");
 });

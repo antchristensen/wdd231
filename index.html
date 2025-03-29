@@ -1,85 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231 Course Page Anthony Christensen</title>
-    <meta name="author" content="Anthony Christensen">
-    <meta name="description" content="WDD231 Course Page">
-    <meta property="og:title" content="WDD231 Course Page Anthony Christensen">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://media.istockphoto.com/id/467703976/photo/arches-national-park.jpg?s=1024x1024&w=is&k=20&c=2aO8SOU7FZML1hxRUEhes5QbG_VabDFOM5g7dVcdGxA="> 
-    <meta property="og:url" content="https://antchristensen.github.io/wdd231/index">
-    <link rel="stylesheet" href="styles/home-page.css">
-    <link rel="stylesheet" href="styles/home-mobile.css" media="screen and (max-width: 768px)">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <script defer src="scripts/getdates.js"></script>
-    <script src="scripts/menu-ham.js"></script>
-    <script src="scripts/course-list.js"></script>
-    <link rel="icon" href="favicon.ico">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD231 Course Page Anthony Christensen</title>
+  <meta name="author" content="Anthony Christensen" />
+  <meta name="description" content="WDD231 Course Page" />
+  <meta property="og:title" content="WDD231 Course Page Anthony Christensen" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://media.istockphoto.com/id/467703976/photo/arches-national-park.jpg?s=1024x1024&w=is&k=20&c=2aO8SOU7FZML1hxRUEhes5QbG_VabDFOM5g7dVcdGxA=" />
+  <meta property="og:url" content="https://antchristensen.github.io/wdd231/index" />
+  <link rel="stylesheet" href="styles/home-page.css" />
+  <link rel="stylesheet" href="styles/home-mobile.css" media="screen and (max-width: 768px)" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <script defer src="scripts/getdates.js"></script>
+  <script defer src="scripts/menu-ham.js"></script>
+  <script defer src="scripts/course-list.js"></script>
+  <link rel="icon" href="favicon.ico" />
 </head>
 
 <body>
-    <header>
-        <button class="hamburger">☰</button>
-        <img src="images/Profile-pic.webp" alt="Anthony Christensen">
-        <p class="site-title"><span>Anthony Christensen</span></p>
-    </header>
+  <header>
+    <button class="hamburger">☰</button>
+    <img src="images/Profile-pic.webp" alt="Anthony Christensen" />
+    <p class="site-title"><span>Anthony Christensen</span></p>
+  </header>
 
-    <nav>
-        <ul class="nav-menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">GitHub Profile</a></li>
-            <li><a href="https://www.linkedin.com/in/anthony-christensen-1aa3b9243">LinkedIn</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">GitHub Profile</a></li>
+      <li><a href="https://www.linkedin.com/in/anthony-christensen-1aa3b9243">LinkedIn</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <h1>WDD231 Course Page</h1>  
+  <main>
+    <h1>WDD231 Course Page</h1>
 
-        <section class="card coursework">
-            <h2>Course Work</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
+    <section class="card coursework">
+      <h2>Course Work</h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
 
-        <section class="card utah">
-            <h2>Utah, United States</h2>
-            <figure>
-                <img src="images/Flag-with-5-point-Star.webp" alt="Utah Arch">
-                <figcaption>Utah Flag</figcaption>
-            </figure>
-        </section>
+    <section class="card utah">
+      <h2>Utah, United States</h2>
+      <figure>
+        <img src="images/Flag-with-5-point-Star.webp" alt="Utah Arch" />
+        <figcaption>Utah Flag</figcaption>
+      </figure>
+    </section>
 
-        <section class="certificate">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="filter-buttons">
-                <button>All</button>
-                <button>CSE</button>
-                <button>WDD</button>
-            </div>
-            <div class="course-list">
-                <button>CSE 110</button>
-                <button>WDD 130</button>
-                <button>CSE 111</button>
-                <button>CSE 210</button>
-                <button>WDD 131</button>
-                <button>WDD 231</button>
-            </div>
-        </section>
-    </main>
+    <section class="certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="filter-buttons">
+        <button>All</button>
+        <button>CSE</button>
+        <button>WDD</button>
+      </div>
+      <div class="course-list"></div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy;<span id="currentYear"></span> Anthony Christensen | Utah</p>
-        <p id="lastModified"></p>
-    </footer>
+  <footer>
+    <p>&copy;<span id="currentYear"></span> Anthony Christensen | Utah</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <!-- Modal Dialog -->
+  <dialog id="courseDialog"></dialog>
 </body>
 </html>
