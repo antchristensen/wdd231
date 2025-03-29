@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Moab Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining the Moab Chamber of Commerce.">
+    <meta name="author" content="Anthony Christesen">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Thank You - Moab Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://media.istockphoto.com/id/467703976/photo/arches-national-park.jpg?s=1024x1024&w=is&k=20&c=2aO8SOU7FZML1hxRUEhes5QbG_VabDFOM5g7dVcdGxA=">
+    <meta property="og:url" content="https://antchristensen.github.io/wdd231/chamber/thankyou.html">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/join.css"> <!-- Reuse join.css for consistency -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script defer src="scripts/hamburger-menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Moab Chamber of Commerce</h1>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">&#9776;</button>
+        
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thank-you-container">
+        <h2>Thank You!</h2>
+        <p>Your application to join the Moab Chamber of Commerce has been received successfully. We will get in touch
+            with you soon.</p>
+        <p>Explore more about us and discover exciting benefits for our members.</p>
+
+        
+        <div class="thank-you-buttons">
+            <a href="index.html" class="btn">Return to Home</a>
+            <a href="about.html" class="btn secondary-btn">Learn More About Us</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Moab Chamber of Commerce</p>
+        <p>Anthony Christesen | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>

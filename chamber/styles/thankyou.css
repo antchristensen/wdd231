@@ -1,0 +1,59 @@
+
+.thank-you-container {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.thank-you-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.thank-you-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #002060;
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.secondary-btn:hover {
+    background-color: #e6b800;
+}
+
+@media screen and (max-width: 768px) {
+    .thank-you-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

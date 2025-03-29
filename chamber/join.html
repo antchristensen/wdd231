@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Page | Moab Chamber of Commerce</title>
+    <meta name="description" content="Moab Chamber of Commerce Join Page">
+    <meta name="author" content="Anthony Christesen">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Moab Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://media.istockphoto.com/id/467703976/photo/arches-national-park.jpg?s=1024x1024&w=is&k=20&c=2aO8SOU7FZML1hxRUEhes5QbG_VabDFOM5g7dVcdGxA=">
+    <meta property="og:url" content="https://antchristensen.github.io/wdd231/chamber/join.html">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script defer src="scripts/hamburger-menu.js"></script>
+    <script defer src="scripts/modal.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Moab Chamber of Commerce</h1>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">&#9776;</button>
+        
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Join the Moab Chamber of Commerce</h2>
+        <p>Fill out the form below to apply for membership.</p>
+    
+        
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="firstName">
+                    First Name:
+                    <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name"
+                        required tabindex="1">
+                </label>
+        
+                
+                <label for="lastName">
+                    Last Name:
+                    <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
+                        required tabindex="2">
+                </label>
+        
+                
+                <label for="orgTitle">
+                    Organizational Title:
+                    <input type="text" id="orgTitle" name="orgTitle"
+                        title="Enter your organizational title (minimum 7 characters)" autocomplete="organization-title"
+                        pattern="[A-Za-z\s\-]{7,}" placeholder="Ex: Executive Director" tabindex="3">
+                </label>
+        
+                
+                <label for="email">
+                    Email Address:
+                    <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" required
+                        placeholder="example@domain.com" tabindex="4">
+                </label>
+        
+                
+                <label for="phone">
+                    Mobile Phone:
+                    <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                        required tabindex="5">
+                </label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Organization Information</legend>
+                
+                <label for="organization">
+                    Organization Name:
+                    <input type="text" id="organization" name="organization"
+                        title="Enter your business or organization's name" autocomplete="organization" required tabindex="6">
+                </label>
+        
+                
+                <label for="membership">
+                    Membership Level:
+                    <select id="membership" name="membership" title="Select your membership level" required tabindex="7">
+                        <option value="" disabled selected>Select a Membership Level</option>
+                        <option value="np">NP Membership (Non-profit - No fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+        
+                
+                <label for="description">
+                    Organization Description:
+                    <textarea id="description" name="description"
+                        title="Provide a brief description of your business or organization" rows="4" tabindex="8"></textarea>
+                </label>
+            </fieldset>
+        
+            
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+        
+            
+            <button type="submit" tabindex="9">Submit Application</button>
+        </form>
+        
+
+
+        <section class="membership-cards">
+            
+            <div class="card" role="button" tabindex="10" onclick="openModal('modal-np')">
+                <h3>NP Membership</h3>
+                <p>Perfect for Non-Profit Organizations. No membership fee.</p>
+                <button onclick="openModal('modal-np')" aria-label="Learn more about NP Membership">Learn More</button>
+            </div>
+
+            
+            <div class="card" role="button" tabindex="11" onclick="openModal('modal-bronze')">
+                <h3>Bronze Membership</h3>
+                <p>Basic benefits, perfect for small businesses.</p>
+                <button onclick="openModal('modal-bronze')" aria-label="Learn more about Bronze Membership">Learn More</button>
+            </div>
+
+            
+            <div class="card" role="button" tabindex="12" onclick="openModal('modal-silver')">
+                <h3>Silver Membership</h3>
+                <p>Includes advertising and training opportunities.</p>
+                <button onclick="openModal('modal-silver')" aria-label="Learn more about Silver Membership">Learn More</button>
+            </div>
+
+            
+            <div class="card" role="button" tabindex="13" onclick="openModal('modal-gold')">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits, event discounts, and priority services.</p>
+                <button onclick="openModal('modal-gold')" aria-label="Learn more about Gold Membership">Learn More</button>
+            </div>
+        </section>
+
+
+        
+        <div id="modal-np" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-np')">&times;</span>
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>Free membership for non-profit organizations</li>
+                    <li>Access to networking events</li>
+                    <li>Basic directory listing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-bronze" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-bronze')">&times;</span>
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>Spotlight on website directory</li>
+                    <li>Discounted training sessions</li>
+                    <li>Exclusive invites to chamber events</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-silver" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-silver')">&times;</span>
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>Advertising opportunities</li>
+                    <li>Priority booth space at events</li>
+                    <li>Listing in quarterly newsletter</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="modal-gold" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-gold')">&times;</span>
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>Exclusive advertising opportunities</li>
+                    <li>Event sponsorship opportunities</li>
+                    <li>Free training and consulting</li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </main>
+    
+
+    <footer>
+        <p>&copy; <span id="year"></span> Moab Chamber of Commerce</p>
+        <p>Anthony Christesen | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+
+
+</body>
+
+</html>
+

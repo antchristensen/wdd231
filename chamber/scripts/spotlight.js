@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const response = await fetch("data/members.json");
         const members = await response.json();
 
-        // Membership Level Mapping
+        
         const membershipLevels = {
             3: "Gold",
             2: "Silver",
