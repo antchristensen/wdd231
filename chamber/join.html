@@ -18,81 +18,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script defer src="scripts/hamburger-menu.js"></script>
     <script defer src="scripts/modal.js"></script>
-
 </head>
 
 <body>
     <header>
-        
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">&#9776;</button>
-        
+
         <nav id="navMenu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                
             </ul>
         </nav>
     </header>
 
     <main>
-    <h1>Join the Moab Chamber of Commerce</h1>
-    
+        <h1>Join the Moab Chamber of Commerce</h1>
+        <p>Fill out the form below to apply for membership.</p>
+
         <form action="thankyou.html" method="get">
             <fieldset>
                 <legend>Personal Information</legend>
-                
                 <label for="firstName">
                     First Name:
                     <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name"
-                        required tabindex="1">
+                        required>
                 </label>
-        
-                
+
                 <label for="lastName">
                     Last Name:
                     <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
-                        required tabindex="2">
+                        required>
                 </label>
-        
-                
+
                 <label for="orgTitle">
                     Organizational Title:
-                    <input type="text" id="orgTitle" name="orgTitle"
-                        title="Enter your organizational title (minimum 7 characters)" autocomplete="organization-title"
-                        pattern="[A-Za-z\s\-]{7,}" placeholder="Ex: Executive Director" tabindex="3">
+                    <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title"
+                        pattern="[A-Za-z\s\-]{7,}" placeholder="Ex: Executive Director">
                 </label>
-        
-                
+
                 <label for="email">
                     Email Address:
-                    <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" required
-                        placeholder="example@domain.com" tabindex="4">
+                    <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+                        required placeholder="example@domain.com">
                 </label>
-        
-                
+
                 <label for="phone">
                     Mobile Phone:
                     <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel"
-                        required tabindex="5">
+                        required>
                 </label>
             </fieldset>
-        
+
             <fieldset>
                 <legend>Organization Information</legend>
-                
                 <label for="organization">
                     Organization Name:
-                    <input type="text" id="organization" name="organization"
-                        title="Enter your business or organization's name" autocomplete="organization" required tabindex="6">
+                    <input type="text" id="organization" name="organization" autocomplete="organization" required>
                 </label>
-        
-                
+
                 <label for="membership">
                     Membership Level:
-                    <select id="membership" name="membership" title="Select your membership level" required tabindex="7">
+                    <select id="membership" name="membership" required>
                         <option value="" disabled selected>Select a Membership Level</option>
                         <option value="np">NP Membership (Non-profit - No fee)</option>
                         <option value="bronze">Bronze Membership</option>
@@ -100,53 +89,46 @@
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
-        
-                
+
                 <label for="description">
                     Organization Description:
-                    <textarea id="description" name="description"
-                        title="Provide a brief description of your business or organization" rows="4" tabindex="8"></textarea>
+                    <textarea id="description" name="description" rows="4"></textarea>
                 </label>
             </fieldset>
-        
-            
-            <input type="hidden" id="timestamp" name="timestamp" value="">
-        
-            
-            <button type="submit" tabindex="9">Submit Application</button>
-        </form>
-        
 
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+            <button type="submit">Submit Application</button>
+        </form>
 
         <section class="membership-cards">
-            <div class="card" tabindex="10" onclick="openModal('modal-np')">
+            <div class="card" tabindex="0" onclick="openModal('modal-np')">
                 <h3>NP Membership</h3>
                 <p>Perfect for Non-Profit Organizations. No membership fee.</p>
                 <button onclick="openModal('modal-np')" aria-label="Learn more about NP Membership">Learn More</button>
             </div>
-        
-            <div class="card" tabindex="11" onclick="openModal('modal-bronze')">
+
+            <div class="card" tabindex="0" onclick="openModal('modal-bronze')">
                 <h3>Bronze Membership</h3>
                 <p>Basic benefits, perfect for small businesses.</p>
-                <button onclick="openModal('modal-bronze')" aria-label="Learn more about Bronze Membership">Learn More</button>
+                <button onclick="openModal('modal-bronze')" aria-label="Learn more about Bronze Membership">Learn
+                    More</button>
             </div>
-        
-            <div class="card" tabindex="12" onclick="openModal('modal-silver')">
+
+            <div class="card" tabindex="0" onclick="openModal('modal-silver')">
                 <h3>Silver Membership</h3>
                 <p>Includes advertising and training opportunities.</p>
-                <button onclick="openModal('modal-silver')" aria-label="Learn more about Silver Membership">Learn More</button>
+                <button onclick="openModal('modal-silver')" aria-label="Learn more about Silver Membership">Learn
+                    More</button>
             </div>
-        
-            <div class="card" tabindex="13" onclick="openModal('modal-gold')">
+
+            <div class="card" tabindex="0" onclick="openModal('modal-gold')">
                 <h3>Gold Membership</h3>
                 <p>Premium benefits, event discounts, and priority services.</p>
-                <button onclick="openModal('modal-gold')" aria-label="Learn more about Gold Membership">Learn More</button>
+                <button onclick="openModal('modal-gold')" aria-label="Learn more about Gold Membership">Learn
+                    More</button>
             </div>
         </section>
-        
 
-
-        
         <div id="modal-np" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('modal-np')">&times;</span>
@@ -194,10 +176,7 @@
                 </ul>
             </div>
         </div>
-
-        
     </main>
-    
 
     <footer>
         <p>&copy; <span id="year"></span> Moab Chamber of Commerce</p>
@@ -208,9 +187,8 @@
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = document.lastModified;
+        document.getElementById('timestamp').value = new Date().toISOString();
     </script>
-
-
 </body>
 
 </html>
