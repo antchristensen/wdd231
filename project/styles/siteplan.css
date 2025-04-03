@@ -1,0 +1,48 @@
+:root {
+    --main-background: #A3B18A;
+    --header-background: #d1d4df;
+    --text-color: black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    color: var(--text-color);
+    background-color: var(--main-background);
+}
+
+header {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: roboto, sans-serif;
+    color: var(--text-color);
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+section {
+    background-color: var(--header-background);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px ;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+section ul :hover {
+    color: white;
+}
