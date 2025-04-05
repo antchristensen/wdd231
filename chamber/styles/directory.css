@@ -186,3 +186,69 @@ footer {
         z-index: 1000;
     }
 }
+
+.cards-container {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 640px) {
+    .cards-container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "a" "b" "c" "d" "e" "f" "g" "h";
+    }
+  }
+  
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .cards-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "a b" "c d" "e f" "g h";
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .cards-container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "a b c d"
+        "e f g h";
+    }
+  }
+  
+  .card:nth-child(1) { grid-area: a; }
+  .card:nth-child(2) { grid-area: b; }
+  .card:nth-child(3) { grid-area: c; }
+  .card:nth-child(4) { grid-area: d; }
+  .card:nth-child(5) { grid-area: e; }
+  .card:nth-child(6) { grid-area: f; }
+  .card:nth-child(7) { grid-area: g; }
+  .card:nth-child(8) { grid-area: h; }
+  
+
+.cards-container img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect (desktop and tablet only) */
+  @media (min-width: 641px) {
+    .cards-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+  }
+  

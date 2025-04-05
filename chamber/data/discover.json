@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Arches National Park",
+      "address": "Moab, UT 84532",
+      "description": "A stunning collection of natural stone arches and desert landscapes.",
+      "image": "images/Moab1.webp"
+    },
+    {
+      "name": "Canyonlands National Park",
+      "address": "2282 SW Resource Blvd, Moab, UT 84532",
+      "description": "A massive park of canyons, mesas, and rivers carved by the Colorado River.",
+      "image": "images/moab4.webp"
+    },
+    {
+      "name": "Dead Horse Point State Park",
+      "address": "UT-313, Moab, UT 84532",
+      "description": "Famous for dramatic overlooks of the Colorado River and Canyonlands.",
+      "image": "images/DeadHorsePoint.webp"
+    },
+    {
+      "name": "Slickrock Bike Trail",
+      "address": "Sand Flats Rd, Moab, UT 84532",
+      "description": "World-renowned trail for mountain biking with epic scenery.",
+      "image": "images/slickrock.webp"
+    },
+    {
+      "name": "Moab Giants Dinosaur Park",
+      "address": "112 UT-313, Moab, UT 84532",
+      "description": "Life-size dinosaur replicas and a 3D theater experience.",
+      "image": "images/MoabGiants.webp"
+    },
+    {
+      "name": "La Sal Mountains",
+      "address": "South of Moab, UT",
+      "description": "Snow-capped peaks with hiking, lakes, and scenic drives.",
+      "image": "images/lasalmountains.webp"
+    },
+    {
+      "name": "Hole N\" The Rock",
+      "address": "11037 US-191, Moab, UT 84532",
+      "description": "Quirky 5,000 sq ft home carved into sandstone.",
+      "image": "images/hole-n-the-Rock.webp"
+    },
+    {
+      "name": "Moab Museum",
+      "address": "118 E Center St, Moab, UT 84532",
+      "description": "Exhibits on regional history, geology, and Indigenous cultures.",
+      "image": "images/moabmuseum.webp"
+    }
+  ]
+  
