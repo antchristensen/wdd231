@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application Received - TC&Sons</title>
+  <meta name="author" content="Anthony Christensen" />
+  <meta name="description" content="Job application confirmation" />
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>TC&Sons Landscaping</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h2>Application Received</h2>
+      <p><strong>Thank you, <span id="applicantName">applicant</span>!</strong></p>
+      <p>We appreciate your interest in joining TC&Sons Landscaping. We'll review your application and reach out if there's a good fit.</p>
+      <a href="index.html" class="apply-button">Return Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TC&Sons Landscaping | Anthony Christensen | All rights reserved.</p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+    document.getElementById("applicantName").textContent = name || "applicant";
+  </script>
+</body>
+
+</html>

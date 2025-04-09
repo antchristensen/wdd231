@@ -7,8 +7,13 @@
     <title>TC&Sons Landscaping</title>
     <meta name="author" content="Anthony Christensen">
     <meta name="description" content="TC&Sons Landscaping Projecct">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://antchristensen.github.io/wdd231/project/images/family-home">
+    <meta property="og:url" content="https://antchristensen.github.io/wdd231/project/index.html">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/landscape.css">
-    <script defer src="scripts/landscape.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/apply.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
@@ -20,7 +25,7 @@
         <h1>TC&Sons Landscaping</h1>
         <nav>
             <ul>
-                <li><a href="landscape-website.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
@@ -38,14 +43,18 @@
             <div class="photo-box">
                 <img src="images/family-home.webp" alt="family photo" loading="lazy">
             </div>
-            <div class="quote-box">
-                <blockquote>"The best time to plant a tree was 20 years ago. The second best time is now."</blockquote>
+            <div class="quote-box hiring-box">
+                <h3>Now Hiring!</h3>
+                <p>We're looking for hard-working individuals to join our landscaping crew. Experience preferred, but not required.</p>
+                <a href="apply.html" class="apply-button">Apply Now</a>
+
             </div>
+            
         </aside>
     </main>
     
     <footer>
-        <p>&copy; 2025 TC&Sons Landscaping | Anthony Christensen | All rights reserved.</p>
+        <p>&copy;<span id="currentYear"></span> 2025 TC&Sons Landscaping | Anthony Christensen | All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Application</title>
+  <meta name="author" content="Anthony Christensen" />
+  <meta name="description" content="Apply with TC&Sons Landscaping" />
+  <meta property="og:title" content="Moab Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://media.istockphoto.com/id/467703976/photo/arches-national-park.jpg?s=1024x1024&w=is&k=20&c=2aO8SOU7FZML1hxRUEhes5QbG_VabDFOM5g7dVcdGxA=">
+  <meta property="og:url" content="https://antchristensen.github.io/wdd231/project/index.html">
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <script defer src="scripts/apply.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>TC&Sons Landscaping</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+      <h2>Job Application</h2>
+      <p>Fill out the form below to apply for a position with TC&Sons Landscaping.</p>
+
+      <form id="jobApplicationForm">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="experience">Relevant Experience:</label>
+          <textarea id="experience" name="experience" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="availability">Availability:</label>
+          <select id="availability" name="availability" required>
+            <option value="">-- Select Availability --</option>
+            <option value="Full Time">Full Time</option>
+            <option value="Part Time">Part Time</option>
+            <option value="Seasonal">Seasonal</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TC&Sons Landscaping | Anthony Christensen | All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
