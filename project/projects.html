@@ -13,6 +13,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/projects.css" />
   <script defer src="scripts/projects.js"></script>
+  <script defer src="scripts/datetime.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
@@ -33,13 +34,13 @@
     <section class="projects-gallery">
       <h2>A few of our Landscaping Projects</h2>
       <div class="gallery" id="projectContainer">
-        <!-- Cards will be dynamically inserted here -->
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 TC&Sons Landscaping | Anthony Christensen | All rights reserved.</p>
+    <p>&copy; <span id="currentYear"></span> TC&Sons Landscaping | Anthony Christensen</p>
+    <p id="lastModified"></p>
   </footer>
 
     <div id="modal" class="modal">
