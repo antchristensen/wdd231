@@ -10,3 +10,4 @@ const lastModification = document.lastModified
 
 currentYear.textContent = fullYear
 lastModified.textContent = `Last Modification: ${lastModification}`
+

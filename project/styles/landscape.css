@@ -12,7 +12,6 @@ body {
     background-color: var(--main-background);
 }
 
-
 header {
     background-color: var(--main-background);
     color: var(--text-color);
@@ -27,6 +26,21 @@ nav {
     background-color: #333;
     text-align: center;
     padding: 10px;
+    position: relative;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
@@ -34,8 +48,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; 
-    gap: 20px; 
+    gap: 20px;
 }
 
 nav li {
@@ -55,7 +68,6 @@ nav a:hover {
 }
 
 
-
 main {
     display: flex;
     justify-content: space-between;
@@ -63,7 +75,6 @@ main {
     margin: 20px auto;
     padding: 20px;
 }
-
 
 .about {
     flex: 2;
@@ -74,7 +85,6 @@ main {
     margin-right: 40px;
 }
 
-
 .right-section {
     flex: 1;
     display: flex;
@@ -82,9 +92,8 @@ main {
     gap: 20px;
 }
 
-
 .photo-box {
-    max-width: 350px; 
+    max-width: 350px;
     padding: 10px;
     background: var(--header-background);
     text-align: center;
@@ -93,11 +102,10 @@ main {
 }
 
 .photo-box img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
-
 
 .quote-box {
     background: var(--header-background);
@@ -108,34 +116,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.hiring-box {
-    background-color: var(--header-background);
-    color: #333;
-    font-style: normal;
-}
-
-.hiring-box h3 {
-    margin-top: 0;
-    color: var(--text-color);
-}
-
-.apply-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: var(--text-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.apply-button:hover {
-    background-color: #1b5e20;
-}
-
-
 .confirmation-message {
     background: var(--header-background);
     padding: 20px;
@@ -143,7 +123,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-right: 40px;
 }
-
 
 
 footer {
@@ -164,7 +143,6 @@ footer {
         align-items: center;
     }
 
-
     main {
         display: flex;
         flex-direction: column;
@@ -172,6 +150,20 @@ footer {
         width: 100%;
     }
 
+    #menu-toggle {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
 
     nav ul {
         flex-direction: column;
@@ -191,12 +183,10 @@ footer {
         padding: 10px;
     }
 
-
     .about {
         width: 90%;
         text-align: center;
     }
-
 
     .right-section {
         display: flex;
