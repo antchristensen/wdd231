@@ -31,7 +31,7 @@ fetch('data/projects.json')
       container.appendChild(card);
     });
 
-    // Close Modal
+    
     closeBtn.onclick = () => {
       modal.style.display = 'none';
     };

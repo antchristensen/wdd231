@@ -12,7 +12,6 @@ body {
     background-color: var(--main-background);
 }
 
-/* HEADER */
 
 header {
     background-color: var(--main-background);
@@ -70,7 +69,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* FORM STYLING */
 
 .contact-form,
 .contact-info {
@@ -155,7 +153,6 @@ footer {
     width: 100%;
 }
 
-/* MEDIA QUERIES - MOBILE SUPPORT */
 
 @media screen and (max-width: 768px) {
 

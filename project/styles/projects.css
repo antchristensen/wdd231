@@ -12,7 +12,6 @@ body {
     background-color: var(--main-background);
 }
 
-/* HEADER */
 
 header {
     background-color: var(--main-background);
@@ -23,7 +22,6 @@ header {
     width: 100%;
 }
 
-/* NAVIGATION */
 
 nav {
     background-color: #333;
@@ -70,7 +68,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* PROJECTS GALLERY */
 
 .projects-gallery {
     text-align: center;
@@ -128,7 +125,6 @@ nav a:hover {
     background-color: #1b5e20;
 }
 
-/* MODAL STYLES */
 
 .modal {
     display: none;
@@ -175,7 +171,6 @@ nav a:hover {
     color: black;
 }
 
-/* FOOTER */
 
 footer {
     background-color: #333;
@@ -186,7 +181,6 @@ footer {
     width: 100%;
 }
 
-/* MEDIA QUERIES - MOBILE SUPPORT */
 
 @media screen and (max-width: 768px) {
 
