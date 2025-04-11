@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials - TC&Sons Landscaping</title>
+  <meta name="author" content="Anthony Christensen" />
+  <meta name="description" content="Customer testimonials for TC&Sons Landscaping" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Customer Testimonials" />
+  <meta property="og:image" content="https://antchristensen.github.io/wdd231/project/images/family-home" />
+  <meta property="og:url" content="https://antchristensen.github.io/wdd231/project/testimonials.html" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/projects.css" />
+  <script defer src="scripts/testimonials.js"></script>
+  <script defer src="scripts/hamburgernav.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>TC&Sons Landscaping</h1>
+    <nav>
+      <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="testimonials.html" class="active">Testimonials</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects-gallery">
+      <h2>What Our Customers Are Saying</h2>
+      <div class="gallery" id="testimonialContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> TC&Sons Landscaping | Anthony Christensen</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script defer src="scripts/datetime.js"></script>
+</body>
+</html>
